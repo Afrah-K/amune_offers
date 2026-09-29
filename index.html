@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Amune AI automation offers for design studios, sales BDR teams, and medical and dental clinics.">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Amune Offer Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F3F5F8; --surface:#FFFFFF; --ink:#131A2B; --muted:#56607A; --line:#DCE1EA;
+  --brand:#2B3BD1;
+  --studio:#B8336A; --studio-soft:#F8E6EE;
+  --sales:#A8660A; --sales-soft:#F8EEDD;
+  --clinic:#0E7D72; --clinic-soft:#DDF2EF;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Instrument Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E121C; --surface:#161C29; --ink:#E8ECF4; --muted:#9AA4BC;
+    --line:#283044; --brand:#8C97FF;
+    --studio:#F07AAA; --studio-soft:#3A1C2A;
+    --sales:#F0B45A; --sales-soft:#352814;
+    --clinic:#4FCFBF; --clinic-soft:#123330;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E121C; --surface:#161C29; --ink:#E8ECF4; --muted:#9AA4BC;
+  --line:#283044; --brand:#8C97FF;
+  --studio:#F07AAA; --studio-soft:#3A1C2A;
+  --sales:#F0B45A; --sales-soft:#352814;
+  --clinic:#4FCFBF; --clinic-soft:#123330;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);padding-inline:20px;padding-block:0 64px}
+.wrap{max-width:980px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.1;margin:0}
+p{margin:0}
+.label{font:500 11.5px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+header.top{padding-block:48px 28px;display:grid;gap:18px;border-bottom:1px solid var(--line)}
+.mark{display:flex;align-items:center;gap:10px;font:800 20px var(--display);letter-spacing:-.01em}
+.mark i{width:14px;height:14px;border-radius:50%;background:var(--brand);display:block}
+header.top h1{font-size:clamp(34px,6vw,58px);font-weight:800;letter-spacing:-.025em;max-width:16ch}
+header.top p.lede{font-size:18px;color:var(--muted);max-width:60ch}
+nav.jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+nav.jump a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);font:500 14px var(--body);border:1px solid var(--line);background:var(--surface);padding:8px 14px;border-radius:999px}
+nav.jump a:hover,nav.jump a:focus-visible{border-color:var(--ink);outline:none}
+nav.jump a b{width:8px;height:8px;border-radius:50%;display:block}
+.note{font-size:13.5px;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:10px;padding:10px 14px;max-width:70ch}
+
+section.offer{padding-block:56px 8px;display:grid;gap:28px;border-bottom:1px solid var(--line)}
+.offer.studio{--c:var(--studio);--cs:var(--studio-soft)}
+.offer.sales{--c:var(--sales);--cs:var(--sales-soft)}
+.offer.clinic{--c:var(--clinic);--cs:var(--clinic-soft)}
+.head{display:grid;gap:12px}
+.head .label{color:var(--c)}
+.head h2{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.02em}
+.head .promise{font:600 clamp(19px,2.4vw,23px)/1.35 var(--display);max-width:40ch}
+.head .for{color:var(--muted);max-width:66ch}
+
+.pain{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.pain div{background:var(--cs);border-radius:10px;padding:14px 16px;font-size:15px}
+.pain div strong{display:block;font-family:var(--display);font-size:16px;margin-bottom:2px}
+
+h3.sub{font-size:21px;font-weight:700;display:flex;align-items:baseline;gap:10px}
+.block{display:grid;gap:14px}
+
+ol.flow{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+ol.flow li{display:grid;grid-template-columns:44px 1fr;gap:4px 16px;padding-block:14px;border-bottom:1px solid var(--line)}
+ol.flow li .n{font:500 13px var(--mono);color:var(--c);padding-top:3px}
+ol.flow li h4{margin:0;font:600 16.5px/1.35 var(--body)}
+ol.flow li p{grid-column:2;color:var(--muted);font-size:15px}
+
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.tier{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;gap:12px;align-content:start}
+.tier.pick{border:2px solid var(--c)}
+.tier .tname{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.tier .tname h4{margin:0;font:700 19px var(--display)}
+.chip{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--cs);color:var(--c);padding:3px 8px;border-radius:999px;white-space:nowrap}
+.price{font-variant-numeric:tabular-nums}
+.price .big{font:800 26px var(--display);letter-spacing:-.01em}
+.price .sm{display:block;color:var(--muted);font-size:13.5px}
+.tier ul{margin:0;padding-left:18px;display:grid;gap:5px;font-size:14.5px}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.fact{border-left:3px solid var(--c);padding:4px 0 4px 14px}
+.fact .v{font:700 17px/1.3 var(--display)}
+.fact .k{font-size:14px;color:var(--muted)}
+
+.guarantee{background:var(--ink);color:var(--bg);border-radius:14px;padding:20px 22px;display:grid;gap:6px}
+.guarantee .label{color:var(--bg);opacity:.7}
+.guarantee p{font:600 18px/1.4 var(--display);max-width:60ch}
+
+.cta{font-size:15px;color:var(--muted);padding-bottom:40px}
+.cta strong{color:var(--ink)}
+
+footer{padding-top:36px;display:grid;gap:10px;color:var(--muted);font-size:14px}
+footer h3{color:var(--ink);font-size:20px}
+footer ul{margin:0;padding-left:18px;display:grid;gap:4px}
+
+@media (max-width:520px){
+  ol.flow li{grid-template-columns:32px 1fr}
+  header.top{padding-block:32px 22px}
+}
+nav.jump a b{background:var(--c)}
+nav.jump a[aria-selected="true"]{background:var(--c);border-color:var(--c);color:var(--bg)}
+nav.jump a[aria-selected="true"] b{background:var(--bg)}
+.js section.offer:not(.active){display:none}
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:36px}
+.pager a{color:var(--c);font:600 15px var(--body);text-decoration:none}
+.pager a:hover,.pager a:focus-visible{text-decoration:underline}
+.cta{padding-bottom:8px}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  body{padding-inline:0;padding-block:0;font-size:12px;line-height:1.45;background:#fff}
+  header.top{padding-block:0 16px;gap:10px}
+  header.top h1{max-width:none;font-size:30px}
+  header.top p.lede{font-size:13.5px}
+  .head h2{font-size:30px}
+  .head .promise{font-size:16px;max-width:60ch}
+  .head .for{font-size:12.5px}
+  ol.flow li{padding-block:7px}
+  ol.flow li h4{font-size:13.5px}
+  ol.flow li p{font-size:12px}
+  .pain div{padding:10px 12px;font-size:12px}
+  .pain div strong{font-size:13px}
+  h3.sub{font-size:16px}
+  .tier{padding:14px;gap:8px}
+  .tier ul{font-size:12px}
+  .price .big{font-size:21px}
+  .guarantee{padding:14px 18px}
+  .guarantee p{font-size:14.5px}
+  .fact .v{font-size:14px}
+  .fact .k{font-size:12px}
+  .cta{font-size:12.5px;padding-bottom:0}
+  footer{padding-top:18px}
+  .block:has(.tiers){break-before:page;padding-top:4px}
+  nav.jump,.pager{display:none!important}
+  section.offer{display:grid!important;break-before:page;padding-block:0 8px;gap:18px}
+  section.offer.studio{break-before:auto;padding-top:28px}
+  .tier,ol.flow li,.guarantee,.fact,.pain div{break-inside:avoid}
+  .tiers{grid-template-columns:repeat(3,1fr)}
+  .pain{grid-template-columns:repeat(4,1fr)}
+  .facts{grid-template-columns:repeat(3,1fr)}
+  footer{break-inside:avoid}
+  .guarantee,.pain div,.chip,.tier{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <h1>Three automation offers, built for three kinds of teams</h1>
+  <p class="lede">Amune builds AI automation that takes the repetitive work off your team's plate. Each offer below is a fixed-scope package with a setup phase, a monthly run-and-improve plan, and a measurable target.</p>
+  <nav class="jump" aria-label="Offers" role="tablist">
+    <a href="#studio" data-tab="studio" role="tab" style="--c:var(--studio)"><b></b>Design studios</a>
+    <a href="#sales" data-tab="sales" role="tab" style="--c:var(--sales)"><b></b>Sales &amp; BDR teams</a>
+    <a href="#clinic" data-tab="clinic" role="tab" style="--c:var(--clinic)"><b></b>Clinics &amp; dental</a>
+  </nav>
+</header>
+
+<!-- ============ STUDIO ============ -->
+<section class="offer studio" id="studio">
+  <div class="head">
+    <span class="label">Offer 01 · Design studios &amp; creative agencies</span>
+    <h2>Amune Studio Flow</h2>
+    <p class="promise">Give your designers back 15+ hours a month by automating everything around the creative work.</p>
+    <p class="for">For branding, digital and content studios of 3 to 50 people who are losing billable hours to briefs, feedback rounds, file exports and client admin.</p>
+  </div>
+
+  <div class="pain">
+    <div><strong>Messy briefs</strong>Scope lives across WhatsApp, email and calls, so the first round misses.</div>
+    <div><strong>Feedback chaos</strong>Comments arrive in five places and someone has to merge them by hand.</div>
+    <div><strong>Export grind</strong>Every campaign needs 20+ sizes and formats, rebuilt manually.</div>
+    <div><strong>Admin creep</strong>Quotes, status updates and invoices eat the studio lead's week.</div>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">What we automate</h3>
+    <ol class="flow">
+      <li><span class="n">01</span><h4>AI brief intake</h4><p>Client fills a smart form or forwards an email; Amune turns it into a structured brief with objectives, deliverables, sizes, deadlines and open questions.</p></li>
+      <li><span class="n">02</span><h4>Quote &amp; proposal drafting</h4><p>Draft scope, timeline and price generated from the brief and your rate card, ready for a lead to review and send.</p></li>
+      <li><span class="n">03</span><h4>Research &amp; moodboard starter</h4><p>Competitor scan, reference gathering and a first-pass moodboard so designers start from direction, not a blank canvas.</p></li>
+      <li><span class="n">04</span><h4>Feedback consolidation</h4><p>Comments from email, Slack, WhatsApp and Figma collected into one numbered revision list per round, with conflicts flagged.</p></li>
+      <li><span class="n">05</span><h4>Resize, export &amp; asset tagging</h4><p>Master files auto-adapted into every channel size, named to convention, tagged and filed in your asset library.</p></li>
+      <li><span class="n">06</span><h4>Client updates &amp; invoicing</h4><p>Weekly status summaries sent automatically; approved milestones trigger invoices in your accounting tool.</p></li>
+    </ol>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">Packages</h3>
+    <div class="tiers">
+      <div class="tier">
+        <div class="tname"><h4>Starter</h4></div>
+        <div class="price"><span class="big">$5,000</span><span class="sm">setup · then $1,500 / month</span></div>
+        <ul><li>Brief intake + quote drafting</li><li>Feedback consolidation</li><li>1 team workspace, up to 5 users</li><li>Monthly check-in</li></ul>
+      </div>
+      <div class="tier pick">
+        <div class="tname"><h4>Studio</h4><span class="chip">Most chosen</span></div>
+        <div class="price"><span class="big">$12,000</span><span class="sm">setup · then $3,000 / month</span></div>
+        <ul><li>Everything in Starter</li><li>Resize, export &amp; asset tagging</li><li>Moodboard &amp; research starter</li><li>Client updates + invoicing triggers</li><li>Up to 20 users, bi-weekly tuning</li></ul>
+      </div>
+      <div class="tier">
+        <div class="tname"><h4>Agency</h4></div>
+        <div class="price"><span class="big">Custom</span><span class="sm">from $25,000 setup</span></div>
+        <ul><li>Full workflow redesign</li><li>Custom AI models trained on your past work and brand guidelines</li><li>Multi-team, multi-client setup</li><li>Dedicated automation lead</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="facts">
+    <div class="fact"><div class="v">3–4 weeks</div><div class="k">From kickoff to live workflows</div></div>
+    <div class="fact"><div class="v">Figma, Adobe, Notion, Slack</div><div class="k">Works with the tools you already use</div></div>
+    <div class="fact"><div class="v">Hours saved per designer</div><div class="k">Tracked and reported monthly</div></div>
+  </div>
+
+  <div class="guarantee">
+    <span class="label">Guarantee</span>
+    <p>If Studio Flow does not save your team at least 20 hours in the first 60 days, we keep working at no monthly fee until it does.</p>
+  </div>
+  <p class="cta"><strong>Next step:</strong> a 30-minute workflow audit where we map one live project and show where the hours go.</p>
+  <div class="pager"><span></span><span><a href="#sales" data-go="sales">Next: Sales &amp; BDR offer →</a></span></div>
+</section>
+
+<!-- ============ SALES ============ -->
+<section class="offer sales" id="sales">
+  <div class="head">
+    <span class="label">Offer 02 · Sales teams, BDRs &amp; SDRs</span>
+    <h2>Amune Pipeline Engine</h2>
+    <p class="promise">Let your BDRs spend their day in conversations, while AI handles prospecting, follow-ups and CRM updates.</p>
+    <p class="for">For B2B sales teams with 2 to 30 BDRs who spend more time researching, writing sequences and updating the CRM than actually talking to buyers.</p>
+  </div>
+
+  <div class="pain">
+    <div><strong>Research drag</strong>Reps spend hours building lists and looking up each account.</div>
+    <div><strong>Generic outreach</strong>Templates get ignored; real personalisation doesn't scale.</div>
+    <div><strong>Leaky follow-up</strong>Warm replies go cold because nobody answered in time.</div>
+    <div><strong>Dirty CRM</strong>Missing notes and stages mean the forecast is a guess.</div>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">The automated funnel, stage by stage</h3>
+    <ol class="flow">
+      <li><span class="n">01</span><h4>Lead sourcing &amp; enrichment</h4><p>Target accounts and contacts pulled against your ideal customer profile, enriched with role, company news, tech stack and hiring signals.</p></li>
+      <li><span class="n">02</span><h4>ICP scoring &amp; prioritisation</h4><p>Every lead scored so reps work the hottest accounts first, with the reason for each score shown.</p></li>
+      <li><span class="n">03</span><h4>Personalised multichannel sequences</h4><p>Email, LinkedIn and WhatsApp messages written per prospect from real account research, sent within your volume and deliverability limits.</p></li>
+      <li><span class="n">04</span><h4>Reply handling &amp; meeting booking</h4><p>Replies classified in seconds (interested, objection, not now, wrong person). Interested leads get a booking link and calendar slot; objections get a drafted answer for the rep to approve.</p></li>
+      <li><span class="n">05</span><h4>Call prep &amp; call summaries</h4><p>One-page brief before each meeting; after it, notes, next steps and follow-up email drafted automatically.</p></li>
+      <li><span class="n">06</span><h4>CRM hygiene &amp; pipeline reporting</h4><p>Activities, stages and notes written back to HubSpot, Salesforce, Pipedrive or Zoho. A weekly pipeline report lands in your inbox.</p></li>
+    </ol>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">Packages</h3>
+    <div class="tiers">
+      <div class="tier">
+        <div class="tname"><h4>Outbound Starter</h4></div>
+        <div class="price"><span class="big">$6,000</span><span class="sm">setup · then $2,500 / month</span></div>
+        <ul><li>Enrichment + ICP scoring</li><li>AI-personalised email sequences</li><li>Up to 3 BDR seats</li><li>CRM sync</li></ul>
+      </div>
+      <div class="tier pick">
+        <div class="tname"><h4>Full Funnel</h4><span class="chip">Most chosen</span></div>
+        <div class="price"><span class="big">$15,000</span><span class="sm">setup · then $5,000 / month</span></div>
+        <ul><li>Everything in Starter</li><li>Email + LinkedIn + WhatsApp</li><li>Reply handling &amp; auto-booking</li><li>Call prep &amp; summaries</li><li>Up to 10 BDR seats, weekly reporting</li></ul>
+      </div>
+      <div class="tier">
+        <div class="tname"><h4>Revenue Team</h4></div>
+        <div class="price"><span class="big">Custom</span><span class="sm">from $30,000 setup</span></div>
+        <ul><li>Multi-market, multi-language (Arabic &amp; English)</li><li>Custom scoring models on your closed-won data</li><li>Handoff automation BDR → AE</li><li>Dedicated revenue-ops engineer</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="facts">
+    <div class="fact"><div class="v">2–3 weeks</div><div class="k">To first sequences live</div></div>
+    <div class="fact"><div class="v">Under 5 minutes</div><div class="k">Target response time to warm replies</div></div>
+    <div class="fact"><div class="v">Meetings booked</div><div class="k">The one number we report on first</div></div>
+  </div>
+
+  <div class="guarantee">
+    <span class="label">Guarantee</span>
+    <p>We agree a qualified-meetings target together at kickoff. If we miss it in the first 90 days, your next month is free.</p>
+  </div>
+  <p class="cta"><strong>Next step:</strong> send us 20 target accounts and we'll return enriched profiles and sample personalised messages before the first call.</p>
+  <div class="pager"><span><a href="#studio" data-go="studio">← Design studios offer</a></span><span><a href="#clinic" data-go="clinic">Next: Clinics &amp; dental offer →</a></span></div>
+</section>
+
+<!-- ============ CLINIC ============ -->
+<section class="offer clinic" id="clinic">
+  <div class="head">
+    <span class="label">Offer 03 · Medical clinics &amp; dental practices</span>
+    <h2>Amune Clinic Autopilot</h2>
+    <p class="promise">Fewer no-shows, fuller chairs and less paperwork, so doctors and front desk can focus on patients.</p>
+    <p class="for">For outpatient clinics, polyclinics and dental practices with 1 to 20 practitioners whose front desk is overloaded and whose clinicians finish notes after hours.</p>
+  </div>
+
+  <div class="pain">
+    <div><strong>Missed calls</strong>After-hours and busy-line calls become lost bookings.</div>
+    <div><strong>No-shows</strong>Empty chairs that nobody had time to refill.</div>
+    <div><strong>Lapsed recalls</strong>Six-month check-ups and cleanings that never get rebooked.</div>
+    <div><strong>Note burden</strong>Doctors typing notes and insurance paperwork late into the evening.</div>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">What we automate, across the patient journey</h3>
+    <ol class="flow">
+      <li><span class="n">01</span><h4>24/7 AI receptionist</h4><p>Answers WhatsApp, web chat and calls in Arabic and English. Books, reschedules and cancels directly in your practice management system, and hands complex cases to staff.</p></li>
+      <li><span class="n">02</span><h4>Pre-visit intake</h4><p>Digital forms for medical history, consent and insurance details sent before the visit and filed to the patient record.</p></li>
+      <li><span class="n">03</span><h4>Reminders &amp; waitlist refill</h4><p>Smart reminders with one-tap confirm. Cancelled slots offered automatically to patients on the waitlist.</p></li>
+      <li><span class="n">04</span><h4>Clinical note drafting</h4><p>AI scribe drafts SOAP or dental charting notes from the consultation for the clinician to review and sign. Nothing is filed without clinician approval.</p></li>
+      <li><span class="n">05</span><h4>Insurance &amp; claims prep</h4><p>Pre-approval requests and claim documents assembled from the note, checked against payer requirements before submission.</p></li>
+      <li><span class="n">06</span><h4>Recall, treatment follow-up &amp; reviews</h4><p>Patients due for hygiene, check-ups or pending treatment plans are contacted automatically. Happy patients get a review request.</p></li>
+    </ol>
+  </div>
+
+  <div class="block">
+    <h3 class="sub">Packages</h3>
+    <div class="tiers">
+      <div class="tier">
+        <div class="tname"><h4>Front Desk</h4></div>
+        <div class="price"><span class="big">$5,000</span><span class="sm">setup · then $1,500 / month</span></div>
+        <ul><li>AI receptionist on WhatsApp &amp; web</li><li>Reminders &amp; confirmations</li><li>Pre-visit intake forms</li><li>1 location</li></ul>
+      </div>
+      <div class="tier pick">
+        <div class="tname"><h4>Full Practice</h4><span class="chip">Most chosen</span></div>
+        <div class="price"><span class="big">$12,000</span><span class="sm">setup · then $3,500 / month</span></div>
+        <ul><li>Everything in Front Desk</li><li>Voice call handling</li><li>Waitlist refill &amp; recall campaigns</li><li>Clinical note drafting</li><li>Up to 8 practitioners</li></ul>
+      </div>
+      <div class="tier">
+        <div class="tname"><h4>Clinic Group</h4></div>
+        <div class="price"><span class="big">Custom</span><span class="sm">from $30,000 setup</span></div>
+        <ul><li>Multi-branch, central call handling</li><li>Insurance &amp; claims preparation</li><li>Group-level reporting dashboard</li><li>Dedicated implementation lead</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="facts">
+    <div class="fact"><div class="v">3–5 weeks</div><div class="k">From kickoff to go-live</div></div>
+    <div class="fact"><div class="v">Clinician in the loop</div><div class="k">AI drafts, the doctor approves every clinical note</div></div>
+    <div class="fact"><div class="v">Privacy by design</div><div class="k">Built to align with UAE data protection and DHA / DoH health data rules</div></div>
+  </div>
+
+  <div class="guarantee">
+    <span class="label">Guarantee</span>
+    <p>If your no-show rate has not dropped within 90 days of go-live, we refund your third month's fee.</p>
+  </div>
+  <p class="cta"><strong>Next step:</strong> a free missed-bookings audit. We review one week of calls and messages and show how many appointments slipped through.</p>
+  <div class="pager"><span><a href="#sales" data-go="sales">← Sales &amp; BDR offer</a></span><span></span></div>
+</section>
+
+<footer>
+  <h3>How every Amune engagement runs</h3>
+  <ul>
+    <li><strong>Audit</strong> (week 1): map current workflows and set the target metric.</li>
+    <li><strong>Build</strong> (weeks 2–4): connect your tools, configure the AI, test with real cases.</li>
+    <li><strong>Launch &amp; train</strong>: go live with your team and hand over simple guides.</li>
+    <li><strong>Run &amp; improve</strong> (monthly): monitor, tune and report results against the target.</li>
+  </ul>
+</footer>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement; root.classList.add('js');
+  var ids=['studio','sales','clinic'];
+  function show(id,scroll){
+    if(ids.indexOf(id)<0) id='studio';
+    ids.forEach(function(k){document.getElementById(k).classList.toggle('active',k===id);});
+    document.querySelectorAll('nav.jump a').forEach(function(a){a.setAttribute('aria-selected',a.dataset.tab===id?'true':'false');});
+    if(scroll) window.scrollTo({top:0,behavior:'smooth'});
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[data-tab],a[data-go]'); if(!a) return;
+    e.preventDefault(); var id=a.dataset.tab||a.dataset.go;
+    try{history.replaceState(null,'','#'+id);}catch(_){}
+    show(id,!!a.dataset.go);
+  });
+  show((location.hash||'').slice(1),false);
+})();
+</script>
+</body>
+</html>
